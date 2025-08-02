@@ -3,7 +3,8 @@
 2. [String 함수들](#String-함수들)  
 3. [Dictionary 함수들](#Dictionary-함수들)  
 4. [Tuple 함수들](#Tuple-함수들)
-
+5. [📌 도전 문제 모음](#-도전-문제-모음)
+   
 # List 함수들
 ### 1. `append()` : 리스트 마지막에 요소 추가
 ```python
