@@ -1,4 +1,4 @@
-## list 함수들
+# list 함수들
 ### 1. `append()` : 리스트 마지막에 요소 추가
 ```python
 list = [1, 2, 3, 4, 5]
@@ -117,9 +117,161 @@ print(len(list))  # 4
 
 &nbsp;
 
+# String 함수들
+
 ---
 
-## 📌 도전 문제 모음
+## 🔠 문자열 대소문자 변환
+
+| 함수 | 설명 | 예시 출력 |
+|------|------|------------|
+| `s.upper()` | 모든 문자를 대문자로 변환 | `'DAEUN PARK'` |
+| `s.lower()` | 모든 문자를 소문자로 변환 | `'daeun park'` |
+| `s.swapcase()` | 대문자는 소문자로, 소문자는 대문자로 | `'DAeUN PARk'` |
+| `s.capitalize()` | 첫 글자만 대문자로 | `'Daeun park'` |
+| `s.title()` | 각 단어의 첫 글자만 대문자로 | `'Daeun Park'` |
+
+```python
+s = 'daEun parK'
+print(s.upper())      # DAEUN PARK
+print(s.lower())      # daeun park
+print(s.swapcase())   # DAeUN PARk
+print(s.capitalize()) # Daeun park
+print(s.title())      # Daeun Park
+```
+
+---
+
+## 🔢 문자열 개수, 위치 찾기
+
+| 함수 | 설명 |
+|------|------|
+| `s.count(x)` | 문자열 `s`에서 `x`가 몇 번 나오는지 |
+| `s.find(x)` | 문자열 `s`에서 `x`가 처음 나오는 위치 반환 (없으면 -1) |
+| `s.index(x)` | `x`의 첫 위치 반환 (없으면 오류 발생) |
+
+```python
+s = 'My name is Daeun!'
+print(s.count('a'))     # 2
+print(s.count('is'))    # 1
+print(s.find('~'))      # -1
+print(s.index('a'))     # 4
+# print(s.index('~'))   # ValueError: substring not found
+```
+
+---
+
+## 🔗 문자열 결합 및 삽입
+
+| 함수 | 설명 |
+|------|------|
+| `s1.join(s2)` | `s2`의 문자 사이에 `s1`을 삽입 |
+
+```python
+s1 = 'hello'
+s2 = 'WORLD'
+print(s1.join(s2))  # WhelloOhelloRhelloLhelloD
+```
+
+---
+
+## ✂️ 문자열 공백 및 문자 제거
+
+| 함수 | 설명 |
+|------|------|
+| `s.strip([x])` | 양쪽에서 문자 또는 공백 제거 |
+| `s.lstrip([x])` | 왼쪽에서 제거 |
+| `s.rstrip([x])` | 오른쪽에서 제거 |
+
+```python
+s = '  Hello World  '
+print(s.strip())   # 'Hello World'
+print(s.lstrip())  # 'Hello World  '
+print(s.rstrip())  # '  Hello World'
+```
+
+---
+
+## 🔁 문자열 치환 및 분할
+
+| 함수 | 설명 |
+|------|------|
+| `s.replace(x, y)` | x를 y로 치환 |
+| `s.split([sep])` | 구분자 기준으로 문자열 분리 |
+
+```python
+s = 'My name is Daeun!'
+print(s.replace('Daeun', 'Park'))  # My name is Park!
+print(s.replace('a', 'A'))         # My nAme is DAeun!
+print(s.split('is'))               # ['My name ', ' Daeun!']
+print(s.split())                   # ['My', 'name', 'is', 'Daeun!']
+```
+
+---
+
+## ✅ 시작/끝 확인
+
+| 함수 | 설명 |
+|------|------|
+| `s.startswith(x)` | 문자열이 `x`로 시작하는지 |
+| `s.endswith(x)` | 문자열이 `x`로 끝나는지 |
+
+```python
+s = 'My name is Daeun!'
+print(s.startswith('My'))    # True
+print(s.endswith('n!'))      # True
+print(s.endswith('Daeun'))   # False
+```
+
+---
+
+## 📐 문자열 정렬
+
+| 함수 | 설명 |
+|------|------|
+| `s.center(i)` | i 너비 안에서 가운데 정렬 |
+| `s.ljust(i)` | 왼쪽 정렬 |
+| `s.rjust(i)` | 오른쪽 정렬 |
+
+```python
+s = 'My name is Daeun!'
+print("'" + s.center(30) + "'")  # '       My name is Daeun!        '
+print("'" + s.ljust(30) + "'")   # 'My name is Daeun!              '
+print("'" + s.rjust(30) + "'")   # '              My name is Daeun!'
+```
+
+---
+
+## 🔤 문자열 구성 확인
+
+| 함수 | 설명 |
+|------|------|
+| `s.isalpha()` | 알파벳/한글만 구성되었는지 |
+| `s.isalnum()` | 알파벳/숫자/한글로 구성되었는지 |
+| `s.isnumeric()` | 숫자만 구성되었는지 |
+
+```python
+s1 = "MynameisDaeun"
+s2 = "Daeun0928"
+s3 = "0928"
+
+print(s1.isalpha())    # True
+print(s2.isalpha())    # False
+print(s3.isalpha())    # False
+
+print(s1.isalnum())    # True
+print(s2.isalnum())    # True
+print(s3.isalnum())    # True
+
+print(s1.isnumeric())  # False
+print(s2.isnumeric())  # False
+print(s3.isnumeric())  # True
+```
+```
+
+---
+
+# 📌 도전 문제 모음
 ### 250802
 - [📂 100 도달하기 폴더](./250802/100%20도달하기)
 
