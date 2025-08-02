@@ -3,8 +3,8 @@ price = list(map(int, input().split()))
 
 new=[]
 # Please write your code here.
-for i in range(5):
-    for j in range(i+1,5):
+for i in range(n):
+    for j in range(i+1,n):
         new.append(price[i]-price[j])
 
 if min(new)<0:
