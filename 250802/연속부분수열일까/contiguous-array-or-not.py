@@ -2,12 +2,11 @@ a, b = map(int, input().split())
 lista = list(map(int, input().split()))
 listb = list(map(int, input().split()))
 
-idx = 0  
+found = False
 
-for val in lista:
-    if val == listb[idx]:
-        idx += 1
-        if idx == b:  
-            break
+for i in range(a - b + 1):  
+    if lista[i:i + b] == listb:
+        found = True
+        break
 
-print("Yes" if idx == b else "No")
+print("Yes" if found else "No")
