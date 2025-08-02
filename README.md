@@ -1,3 +1,9 @@
+목차
+1.List함수들
+2.String 함수들
+3.Dictionary 함수들
+4.Tuple 함수들 
+
 # list 함수들
 ### 1. `append()` : 리스트 마지막에 요소 추가
 ```python
@@ -267,8 +273,95 @@ print(s1.isnumeric())  # False
 print(s2.isnumeric())  # False
 print(s3.isnumeric())  # True
 ```
+
+
+# Dictionary 함수들
+
+## 딕셔너리 생성
+d = {'key1': 1}
+
+&nbsp;
+
+## 값 추가
+```python
+d['key2'] = 2
+d['key3'] = 'value3'
+d[4] = 4
+d[(5, 6)] = 'value 5 and 6'  # 튜플 키
+d['key7'] = (7, 8)           # 튜플 값
 ```
 
+&nbsp;
+
+## 출력 관련
+```python
+print(d)
+# {'key1': 1, 'key2': 2, 'key3': 'value3', 4: 4, (5, 6): 'value 5 and 6', 'key7': (7, 8)}
+
+print(d.keys())
+# dict_keys(['key1', 'key2', 'key3', 4, (5, 6), 'key7'])
+
+print(d.values())
+# dict_values([1, 2, 'value3', 4, 'value 5 and 6', (7, 8)])
+
+print(d.items())
+# dict_items([('key1', 1), ('key2', 2), ('key3', 'value3'), (4, 4), ((5, 6), 'value 5 and 6'), ('key7', (7, 8))])
+
+print(d['key3'])
+# value3
+```
+
+&nbsp;
+
+## 값 수정
+```python
+d['key3'] = 3
+print(d['key3'])
+# 3
+```
+
+&nbsp;
+
+## 존재 여부 확인
+```python
+if 'key1' in d:
+    print("'key1'이 존재합니다.")
+else:
+    print("'key1'이 존재하지 않습니다.")
+# 'key1'이 존재합니다.
+
+if 1 in d.values():
+    print("1이 존재합니다.")
+else:
+    print("1이 존재하지 않습니다.")
+# 1이 존재합니다.
+```
+
+&nbsp;
+
+## get()으로 값 얻기
+```python
+print(d.get('key1'))     # 1
+print(d.get('key1000'))  # None
+```
+
+&nbsp;
+
+## 키-값 삭제
+```python
+del d['key1']
+print(d)
+# {'key2': 2, 'key3': 3, 4: 4, (5, 6): 'value 5 and 6', 'key7': (7, 8)}
+```
+
+&nbsp;
+
+## 전체 삭제
+```python
+d.clear()
+print(d)
+# {}
+```
 &nbsp;
 
 # 📌 도전 문제 모음
