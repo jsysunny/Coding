@@ -7,9 +7,7 @@ for i in range(n):
     for j in range(i+1,n):
         new.append(price[i]-price[j])
 
-for n in new:
-    if n>0:
-        new.remove(n)
+new=[x for x in new if x<0]
 
 if new:
     print(-min(new))
