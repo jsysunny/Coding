@@ -6,7 +6,7 @@ list.append(6)
 print(list)  # [1, 2, 3, 4, 5, 6]
 ```
 
----
+&nbsp;
 
 ### 2. `insert()` : 원하는 위치에 요소 삽입
 ```python
@@ -15,7 +15,7 @@ list.insert(4, 6)
 print(list)  # [1, 2, 3, 4, 6, 5]
 ```
 
----
+&nbsp;
 
 ### 3. `sort()` : 리스트 정렬 (오름차순) 반대는 sort(reverse=True)
 ```python
@@ -28,7 +28,7 @@ list.sort()
 print(list)  # ['a', 'c', 'd', 'e', 'f']
 ```
 
----
+&nbsp;
 
 ### 4. `reverse()` : 리스트 순서 뒤집기
 ```python
@@ -37,7 +37,7 @@ list.reverse()
 print(list)  # [8, 1, 2, 4, 3]
 ```
 
----
+&nbsp;
 
 ### 5. `index()` : 요소의 인덱스(위치) 반환
 ```python
@@ -45,7 +45,7 @@ list = [3, 4, 2, 1, 8]
 print(list.index(2))  # 2
 ```
 
----
+&nbsp;
 
 ### 6. `remove()` : 첫 번째로 등장하는 요소 삭제
 ```python
@@ -54,7 +54,7 @@ list.remove(4)
 print(list)  # [3, 2, 1, 8, 4, 4]
 ```
 
----
+&nbsp;
 
 ### 7. `pop()` : 인덱스 기반 요소 삭제 (기본은 마지막 요소)
 ```python
@@ -66,7 +66,7 @@ list.pop()
 print(list)  # [3, 4, 2, 1, 8]
 ```
 
----
+&nbsp;
 
 ### 8. `count()` : 특정 요소 개수 세기
 ```python
@@ -74,7 +74,7 @@ list = [3, 4, 2, 1, 8, 4, 4]
 print(list.count(4))  # 3
 ```
 
----
+&nbsp;
 
 ### 9. `extend()` : 리스트 확장 (리스트 더하기)
 ```python
@@ -88,7 +88,7 @@ list_b.extend([24, 25, 26])
 print(list_b)  # [21, 22, 23, 24, 25, 26]
 ```
 
----
+&nbsp;
 
 ### 10. `sum()` : 리스트 요소의 합 구하기
 ```python
@@ -96,7 +96,8 @@ list = [10, 8, 2, 99]
 print(sum(list))  # 119
 ```
 
----
+
+&nbsp;
 
 ### 11. `min()`, `max()` : 최소값, 최대값 구하기
 ```python
@@ -104,7 +105,8 @@ list = [10, 8, 2, 99]
 print(min(list), max(list))  # 2 99
 ```
 
----
+
+&nbsp;
 
 ### 12. `len()` : 리스트 길이(요소 개수) 구하기
 ```python
@@ -112,6 +114,8 @@ list = [10, 8, 2, 99]
 print(len(list))  # 4
 ```
 
+
+&nbsp;
 
 ---
 
