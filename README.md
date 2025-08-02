@@ -119,7 +119,7 @@ print(len(list))  # 4
 
 # String 함수들
 
----
+&nbsp;
 
 ## 🔠 문자열 대소문자 변환
 
@@ -140,7 +140,7 @@ print(s.capitalize()) # Daeun park
 print(s.title())      # Daeun Park
 ```
 
----
+&nbsp;
 
 ## 🔢 문자열 개수, 위치 찾기
 
@@ -159,7 +159,7 @@ print(s.index('a'))     # 4
 # print(s.index('~'))   # ValueError: substring not found
 ```
 
----
+&nbsp;
 
 ## 🔗 문자열 결합 및 삽입
 
@@ -173,7 +173,7 @@ s2 = 'WORLD'
 print(s1.join(s2))  # WhelloOhelloRhelloLhelloD
 ```
 
----
+&nbsp;
 
 ## ✂️ 문자열 공백 및 문자 제거
 
@@ -190,7 +190,7 @@ print(s.lstrip())  # 'Hello World  '
 print(s.rstrip())  # '  Hello World'
 ```
 
----
+&nbsp;
 
 ## 🔁 문자열 치환 및 분할
 
@@ -207,7 +207,7 @@ print(s.split('is'))               # ['My name ', ' Daeun!']
 print(s.split())                   # ['My', 'name', 'is', 'Daeun!']
 ```
 
----
+&nbsp;
 
 ## ✅ 시작/끝 확인
 
@@ -223,7 +223,7 @@ print(s.endswith('n!'))      # True
 print(s.endswith('Daeun'))   # False
 ```
 
----
+&nbsp;
 
 ## 📐 문자열 정렬
 
@@ -240,7 +240,7 @@ print("'" + s.ljust(30) + "'")   # 'My name is Daeun!              '
 print("'" + s.rjust(30) + "'")   # '              My name is Daeun!'
 ```
 
----
+&nbsp;
 
 ## 🔤 문자열 구성 확인
 
@@ -269,7 +269,7 @@ print(s3.isnumeric())  # True
 ```
 ```
 
----
+&nbsp;
 
 # 📌 도전 문제 모음
 ### 250802
