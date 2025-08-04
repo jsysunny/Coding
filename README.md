@@ -1,4 +1,5 @@
 # 📑 목차
+0. 입출력 
 1. [List 함수들](#List-함수들)  
 2. [String 함수들](#String-함수들)  
 3. [Dictionary 함수들](#Dictionary-함수들)  
@@ -6,7 +7,34 @@
 5. [📌 도전 문제 모음](#-도전-문제-모음)
 
 &nbsp;
- 
+# 입출력
+## 입력
+1차원 입력 한개
+input()
+list(input()) / str(input()) / int(input()) / tuple(input())
+각각
+r,c = map(int, input().split())
+r, c = tuple(map(int, input().split()))  
+r, c = list(map(int, input().split())) -> r=temp[0] , c=temp[1]   
+1차원 입력 여러개
+numbers = list(map(int, input().split()))
+string = list(map(str, input().split()))
+2차원 입력 여러개
+matrix = [list(map(int, input().split())) for _ in range(3)]
+
+## 출력
+''.join(list)는 문자열 리스트를 하나의 문자열로 합치는 방법
+
+chars = ['H', 'e', 'l', 'l', 'o']
+result = ''.join(chars)
+print(result)  # 출력: Hello
+
+nums = [1, 2, 3]
+result = ''.join(map(str, nums))  # ✅ ['1', '2', '3']로 바뀜
+print(result)  # 출력: 123
+
+
+
 # List 함수들
 ### 1. `append()` : 리스트 마지막에 요소 추가
 ```python
