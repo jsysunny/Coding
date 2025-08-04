@@ -1,4 +1,4 @@
-str=input()
+stra=input()
 n=int(input())
-for i in range(len(str)-1,len(str)-n-1,-1):
-    print(str[i], end="")
+for i in range(len(stra)-1,len(stra)-n-1,-1):
+    print(stra[i], end="")
