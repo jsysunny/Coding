@@ -16,6 +16,7 @@ list(input()) / str(input()) / int(input()) / tuple(input())
 r,c = map(int, input().split())
 r, c = tuple(map(int, input().split()))  
 r, c = list(map(int, input().split())) -> r=temp[0] , c=temp[1]   
+a, b = tuple(input().split()) : banana apple -> banana \n apple
 1차원 입력 여러개
 arr = input().split() : apple banana candy  -> ['apple', 'banana', 'candy']
 numbers = list(map(int, input().split()))
