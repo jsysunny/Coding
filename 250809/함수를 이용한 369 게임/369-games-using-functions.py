@@ -4,8 +4,13 @@ a, b = map(int, input().split())
 def A(a,b):
     cnt=0
     for i in range(a,b+1):
-        if i//10==3 or i //10==6 or i//10==9 or i%10==3 or  i%10==6 or i%10==9 or i%3==0:
+        if i%3==0:
             cnt+=1
+            continue
+        i=str(i)
+        for j in range(len(i)):
+            if i[j]=='3' or i[j]=='6' or i[j]=='9':
+                cnt+=1
     return cnt
 
 print(A(a,b))
