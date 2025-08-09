@@ -12,6 +12,7 @@ https://www.notion.so/24a2f0b4683880ce9f31de0ee0e30c7e
 
 # 입출력
 ## 입력
+```python
 1차원 입력 한개
 input()
 list(input()) / str(input()) / int(input()) / tuple(input())
@@ -26,8 +27,10 @@ numbers = list(map(int, input().split()))
 string = list(map(str, input().split()))
 2차원 입력 여러개
 matrix = [list(map(int, input().split())) for _ in range(3)]
+```
 
 ## 출력
+```python
 ''.join(list)는 문자열 리스트를 하나의 문자열로 합치는 방법
 
 chars = ['H', 'e', 'l', 'l', 'o']
@@ -37,6 +40,7 @@ print(result)  # 출력: Hello
 nums = [1, 2, 3]
 result = ''.join(map(str, nums))  # ✅ ['1', '2', '3']로 바뀜
 print(result)  # 출력: 123
+```
 
 &nbsp;
 
