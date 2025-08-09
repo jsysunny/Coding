@@ -181,7 +181,7 @@ print(len(list))  # 4
 &nbsp;
 
 # String 함수들
-
+string 은 immutable 이라 문자열을 바꾸려면 list 로 바꾸고 다시 string으로 바꿔야 한다. 
 &nbsp;
 
 ## 🔠 문자열 대소문자 변환
@@ -229,6 +229,32 @@ print(s.index('a'))     # 4
 | 함수 | 설명 |
 |------|------|
 | `s1.join(s2)` | `s2`의 문자 사이에 `s1`을 삽입 |
+| `s1+s2` | 두 문자열 덧셈 |
+| `s1*n` | 문자열 n번 곱셈 |
+문자열은 뺄셈과 나눗셈 지원 안함
+
+```python
+a, b, c = "apple", "banana", "candy"
+tot_str = ""
+
+tot_str += a
+tot_str += b
+tot_str += c
+print(tot_str)
+
+>> applebananacandy
+```
+
+```python
+a, b, c = "apple", "banana", "candy"
+tot_str = ""
+
+for target_str in [a, b, c]:
+    tot_str += target_str
+print(tot_str)
+
+>> applebananacandy
+```
 
 ```python
 s1 = 'hello'
@@ -245,6 +271,7 @@ print(s1.join(s2))  # WhelloOhelloRhelloLhelloD
 | `s.strip([x])` | 양쪽에서 문자 또는 공백 제거 |
 | `s.lstrip([x])` | 왼쪽에서 제거 |
 | `s.rstrip([x])` | 오른쪽에서 제거 |
+| `s.pop(i)` | i번째 문자 제거 |
 
 ```python
 s = '  Hello World  '
