@@ -1,3 +1,5 @@
+https://west-hip-50d.notion.site/116ff45919bd805482d0d8b0565c0157?v=116ff45919bd81768f59000c3c160e93&source=copy_link
+
 # 📑 목차
 0. 입출력 
 1. [List 함수들](#List-함수들)  
