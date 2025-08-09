@@ -11,6 +11,7 @@ def A(a,b):
         for j in range(len(i)):
             if i[j]=='3' or i[j]=='6' or i[j]=='9':
                 cnt+=1
+                break
     return cnt
 
 print(A(a,b))
