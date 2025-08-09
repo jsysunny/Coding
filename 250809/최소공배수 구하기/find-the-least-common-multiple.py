@@ -7,7 +7,7 @@ def maxa(n,m):
             return i
             break
     else:
-        return "False"
+        return False
 
 i= maxa(n,m)
 def mina(n,m,i):
