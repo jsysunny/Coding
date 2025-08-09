@@ -38,8 +38,22 @@ result = ''.join(map(str, nums))  # ✅ ['1', '2', '3']로 바뀜
 print(result)  # 출력: 123
 
 
-
 # List 함수들
+```python
+# 반복문 for에서
+# 요소를 가져올때 인덱스 값도 가져오고 싶다면
+# enumerate()에 이터러블 객체를 전달하면
+# 인덱스 i와 요소 e를 동시에 가져올 수 있다(set타입 형태로 변환)
+
+my_list=["홍길동", "이", "김", "즙"]
+
+for e in my_list:
+    print(e)
+
+for i,e in enumerate(my_list):
+    print(f"i: {i}\t e:{e}")
+```
+
 ### 1. `append()` : 리스트 마지막에 요소 추가
 ```python
 list = [1, 2, 3, 4, 5]
