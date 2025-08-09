@@ -1,4 +1,4 @@
-https://west-hip-50d.notion.site/116ff45919bd805482d0d8b0565c0157?v=116ff45919bd81768f59000c3c160e93&source=copy_link
+https://www.notion.so/24a2f0b4683880ce9f31de0ee0e30c7e
 
 # 📑 목차
 0. 입출력 
