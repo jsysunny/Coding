@@ -1,5 +1,7 @@
 https://www.notion.so/24a2f0b4683880ce9f31de0ee0e30c7e
 
+# List, Dict  변경 가능 / Tuple, String 변경 불가능
+
 # 📑 목차
 0. 입출력 
 1. [List 함수들](#List-함수들)  
@@ -16,15 +18,18 @@ https://www.notion.so/24a2f0b4683880ce9f31de0ee0e30c7e
 1차원 입력 한개
 input()
 list(input()) / str(input()) / int(input()) / tuple(input())
+
 각각
 r,c = map(int, input().split())
 r, c = tuple(map(int, input().split()))  
 r, c = list(map(int, input().split())) -> r=temp[0] , c=temp[1]   
 a, b = tuple(input().split()) : banana apple -> banana \n apple
+
 1차원 입력 여러개
 arr = input().split() : apple banana candy  -> ['apple', 'banana', 'candy']
 numbers = list(map(int, input().split()))
 string = list(map(str, input().split()))
+
 2차원 입력 여러개
 matrix = [list(map(int, input().split())) for _ in range(3)]
 ```
