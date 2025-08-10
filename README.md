@@ -3,7 +3,7 @@ https://www.notion.so/24a2f0b4683880ce9f31de0ee0e30c7e
 # List, Dict  변경 가능 / Tuple, String 변경 불가능
 
 # 📑 목차
-0. 입출력 
+0. [입출력,변수,함수](#함수)  
 1. [List 함수들](#List-함수들)  
 2. [String 함수들](#String-함수들)  
 3. [Dictionary 함수들](#Dictionary-함수들)  
