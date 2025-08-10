@@ -1,6 +1,11 @@
+# 파이썬, c, c++ 정리
 https://www.notion.so/24a2f0b4683880ce9f31de0ee0e30c7e
 
-# List, Dict  변경 가능 / Tuple, String 변경 불가능
+&nbsp;
+
+# List, Dict  변경 가능(mutable) / Tuple, String 변경 불가능(immutable)
+
+&nbsp;
 
 # 📑 목차
 0. [입출력,변수,함수](#함수)  
