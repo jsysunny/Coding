@@ -49,6 +49,7 @@ print(result)  # 출력: 123
 
 &nbsp;
 # 함수
+## return 사용
 ```python
 a, o, c = input().split()
 a = int(a)
@@ -64,6 +65,9 @@ def calculate(a, o, c):
 print(calculate(a, o, c))
 ```
 
+&nbsp;
+
+## print 사용
 ```python
 def plus(a, c):
     print(f"{a} + {c} = {a + c}")
