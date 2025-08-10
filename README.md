@@ -65,6 +65,34 @@ for i,e in enumerate(my_list):
     print(f"i: {i}\t e:{e}")
 ```
 
+```python
+def modify(arr): # arr는 _list와 아예 동일
+    arr[0] = 10
+
+
+_list = [1, 2, 3, 4]
+modify(_list)
+
+for elem in _list:
+    print(elem, end=" ")
+
+>> 10 2 3 4
+```
+
+```python
+def modify(arr): # arr는 _list와 관련이 없다.
+    arr[0] = 10
+
+
+_list = [1, 2, 3, 4]
+modify(_list[:]) # 새로운 리스트를 만들어 넘기기
+
+for elem in _list:
+    print(elem, end=" ")
+
+>> 1 2 3 4 # 값에 변화가 없다
+```
+
 ### 1. `append()` : 리스트 마지막에 요소 추가
 ```python
 list = [1, 2, 3, 4, 5]
