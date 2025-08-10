@@ -48,7 +48,35 @@ print(result)  # 출력: 123
 ```
 
 &nbsp;
+# 함수
+```python
+a, o, c = input().split()
+a = int(a)
+c = int(c)
 
+def plus(a, c):
+    return f"{a} + {c} = {a + c}"
+
+def calculate(a, o, c):
+    if o == "+":
+        return plus(a, c)
+
+print(calculate(a, o, c))
+```
+
+```python
+def plus(a, c):
+    print(f"{a} + {c} = {a + c}")
+
+def calculate(a, o, c):
+    if o == "+":
+        plus(a, c)
+
+calculate(a, o, c) #print(f"{a} + {c} = {a + c}") 이 값이 나옴
+print(calculate(a, o, c)) # None : return 이 없으므로
+```
+
+&nbsp;
 # List 함수들 -> pop만 인덱스 넣기
 ```python
 # 반복문 for에서
