@@ -113,6 +113,22 @@ print(calculate(a, o, c)) # None : return 이 없으므로
 ```
 
 &nbsp;
+## 재귀함수
+```python
+def f(n):
+    if n < 10:
+        return n
+
+    return f(n // 10) + (n % 10)
+
+
+print(f(1527))
+
+>> 15
+```
+재귀함수에서는 종료조건     if n < 10:  return n ; 와 같은 조건을 꼭 넣어줘야함 
+
+&nbsp;
 # List 함수들 -> pop만 인덱스 넣기
 ```python
 # 반복문 for에서
