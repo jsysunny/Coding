@@ -48,6 +48,33 @@ print(result)  # 출력: 123
 ```
 
 &nbsp;
+# 변수 
+```python
+a, b = map(int, input().split())
+
+# Please write your code here.
+def count(a,b):
+    cnt=0
+    #iscount=True 여기다 넣으면 한번 False가 되면 계속 False 이므로 i가 변할때마다 True로 바꾸어 줘야함 
+    for i in range(a,b+1):
+        iscount=True 
+        if i%2==0:
+            iscount= False
+        elif i%10==5:
+            iscount= False
+        elif i%3==0 and i%9!=0:
+            iscount= False
+        
+        if iscount:
+            cnt+=1
+    
+    return cnt
+
+print(count(a,b))
+```
+iscount를 어디다가 처음 선언할지를 잘 정해야함 
+
+&nbsp;
 # 함수
 ## return 사용
 ```python
