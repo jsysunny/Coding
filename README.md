@@ -310,6 +310,34 @@ print(min(list), max(list))  # 2 99
 list = [10, 8, 2, 99]
 print(len(list))  # 4
 ```
+### 13. 정렬
+#### 오름차순 정렬 (작은거 -> 큰거)
+```python
+arr = [12, 41, 37, 81, 19, 25, 60, 20]
+arr.sort()
+print(arr) # [12, 19, 20, 25, 37, 41, 60, 81]
+
+arr = [12, 41, 37, 81, 19, 25, 60, 20]
+arr = sorted(arr)
+print(arr) # [12, 19, 20, 25, 37, 41, 60, 81]
+```
+
+#### 내림차순 정렬 (큰거 -> 작은거)
+```python
+arr = [12, 41, 37, 81, 19, 25, 60, 20]
+arr.sort(reverse=True)
+print(arr) # [81, 60, 41, 37, 25, 20, 19, 12]
+
+arr = [12, 41, 37, 81, 19, 25, 60, 20]
+arr.sort()
+arr = arr[::-1] # reversed array
+print(arr) #[81, 60, 41, 37, 25, 20, 19, 12]
+
+arr = [12, 41, 37, 81, 19, 25, 60, 20]
+arr.sort()
+arr = list(reversed(arr)) # reversed array
+print(arr) #[81, 60, 41, 37, 25, 20, 19, 12]
+```
 
 &nbsp;
 
@@ -320,6 +348,26 @@ print(len(list))  # 4
 # String 함수들
 string 은 immutable 이라 문자열을 바꾸려면 list 로 바꾸고 다시 string으로 바꿔야 한다. 
 &nbsp;
+
+## 정렬 (.sort() 는 안되는데 sorted 는 가능)
+```python
+string = "banana"
+string.sort()
+
+>> AttributeError: 'str' object has no attribute 'sort'
+string = "banana"
+arr = list(string)
+arr.sort()
+print(arr) # ['a', 'a', 'a', 'b', 'n', 'n']
+sorted_str = ''.join(arr)
+print(sorted_str) # aaabnn
+
+string = "banana"
+sorted_arr = sorted(string)
+print(sorted_arr) # ['a', 'a', 'a', 'b', 'n', 'n']
+sorted_str = ''.join(sorted_arr)
+print(sorted_str) # aaabnn
+```
 
 ## 🔠 문자열 대소문자 변환
 
