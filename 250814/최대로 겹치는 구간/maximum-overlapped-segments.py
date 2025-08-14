@@ -8,8 +8,7 @@ for s in segments:
         placed.append(i)
 
 counted=[]
-for p in placed:
-    if p not in counted:
-        counted.append(placed.count(p))
+for p in set(placed):
+    counted.append(placed.count(p))
 
 print(max(counted))
