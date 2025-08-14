@@ -22,9 +22,11 @@ for i in range(len(dir)):
         cur+=x[i]
         segments.append([left, right, "R"])
 #print(segments)
+OFFSET = 10000
+
 placed=[0]*20000
 for s in segments:
-    for i in range(s[0],s[1]):
+    for i in range(s[0]+OFFSET,s[1]+OFFSET):
         placed[i]=s[2]
 
 cntl=cntr=0
