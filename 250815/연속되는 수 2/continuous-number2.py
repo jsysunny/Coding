@@ -1,14 +1,10 @@
 n = int(input())
 arr = [int(input()) for _ in range(n)]
 
+cnt=0
 # Please write your code here.
-right=cnt=maxa=0
-new=[]
-for right in range(len(arr)):
-    while arr[right] in new:
-        new.remove(arr[right])
+for i in range(n):
+    if i==0 or arr[i]!=arr[i-1]:
         cnt+=1
-        maxa=max(maxa,cnt)
-    new.append(arr[right])
-    #rint(new)
-print(maxa)
+
+print(cnt)
