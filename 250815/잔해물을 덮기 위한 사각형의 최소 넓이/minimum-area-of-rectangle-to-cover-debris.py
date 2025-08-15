@@ -33,7 +33,7 @@ for j in range(y1[0],y2[0]):
         width=max(width,cnt2)
 cnt.append(width)
 
-if cnt[0]==0 and cnt1[0]==0:
+if cnt[0]==0 and cnt[1]==0:
     print(0)
 else:
     print(cnt[0]*cnt[1])
