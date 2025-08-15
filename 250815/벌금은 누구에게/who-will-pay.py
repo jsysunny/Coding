@@ -10,4 +10,5 @@ ans=-1
 for i in range(N):
     if stuset[i]==K:
         ans= i+1
+        break
 print(ans)
