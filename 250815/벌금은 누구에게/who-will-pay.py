@@ -6,6 +6,8 @@ stuset=[0]*N
 for i in range(M):
     stuset[student[i]-1]+=1
 
+ans=-1
 for i in range(N):
     if stuset[i]==K:
-        print(i+1)
+        ans= i+1
+print(ans)
