@@ -34,7 +34,7 @@ for i in range(m):
         timeb+=1
 
 for i in range(timeb,1000000):
-    posa[i]=posa[timeb-1]
+    posb[i]=posb[timeb-1]
 
 #print(posa)
 ans=0
