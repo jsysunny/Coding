@@ -19,8 +19,10 @@ while cnt<t:
     #print(in_range(nx,ny))
     if not in_range(nx,ny):
         dir_num= 3-dir_num
-    x, y = x + dxs[dir_num], y + dys[dir_num]
-    #print(nx,ny)
+
+    else:
+        x, y = x + dxs[dir_num], y + dys[dir_num]
+    #print(x,y)
     #x,y=nx,ny
     cnt+=1
 print(x+1,y+1)
