@@ -12,14 +12,14 @@ x,y= r-1,c-1
 #print(x,y)
 cnt=0
 dir_num=dirdict[d]
-while cnt<t+1:
+while cnt<=t:
     #print(f"dir_num: {dir_num}")
     nx, ny= x+dxs[dir_num] , y+dys[dir_num]
     #print(nx,ny)
     #print(in_range(nx,ny))
     if not in_range(nx,ny):
         dir_num= 3-dir_num
-    #nx, ny= x+dxs[dir_num] , y+dys[dir_num]
+    nx, ny= x+dxs[dir_num] , y+dys[dir_num]
     #print(nx,ny)
     x,y=nx,ny
     cnt+=1
