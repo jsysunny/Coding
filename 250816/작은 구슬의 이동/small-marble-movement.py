@@ -12,7 +12,7 @@ x,y= r-1,c-1
 #print(x,y)
 cnt=0
 dir_num=dirdict[d]
-while cnt<=t:
+while cnt<t:
     #print(f"dir_num: {dir_num}")
     nx, ny= x+dxs[dir_num] , y+dys[dir_num]
     #print(nx,ny)
