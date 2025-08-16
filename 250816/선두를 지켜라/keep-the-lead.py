@@ -17,7 +17,7 @@ for _ in range(m):
     t2.append(ti)
 
 # Please write your code here.
-posa=[0]*20000 ; posb=[0]*20000 ;
+posa=[0]*1000000; posb=[0]*1000000 ;
 timea=1 ; timeb=1 ;
 for i in range(n):
     for j in range(t[i]):
