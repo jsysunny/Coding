@@ -1,6 +1,7 @@
 # 파이썬, c, c++ 정리
 https://www.notion.so/24a2f0b4683880ce9f31de0ee0e30c7e
 
+http://localhost:8888/notebooks/OneDrive/%EB%B0%94%ED%83%95%20%ED%99%94%EB%A9%B4/%EC%A0%95%EC%84%9C%EC%9C%A4/python_summary.ipynb?
 &nbsp;
 
 # List, Dict  변경 가능(mutable) / Tuple, String 변경 불가능(immutable)
