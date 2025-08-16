@@ -21,5 +21,5 @@ for dir, dist in moves:
             print(cnt)
             exit()
         #print(cnt)
-if cnt==0:
-    print(-1)
+
+print(-1)
