@@ -38,7 +38,7 @@ if posa[1]<posb[1]:
     afirst=False
 #print(afirst)
 cnt=0
-for i in range(2,20000):
+for i in range(2,timea):
     if afirst and posa[i]<posb[i]:
         #print(1)
         afirst=False
