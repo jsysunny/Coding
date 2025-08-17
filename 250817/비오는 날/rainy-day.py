@@ -17,6 +17,8 @@ for _ in range(n):
     weather.append(w)
     all.append(Rain(d, dy,w))
 
+all.sort(key=lambda x: x.dates)
+#print(all)
 for i in range(n):
     if all[i].weathers=='Rain':
         print(all[i].dates, all[i].week, all[i].weathers)
