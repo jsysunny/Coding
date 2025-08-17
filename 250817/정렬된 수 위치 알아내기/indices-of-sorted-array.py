@@ -1,14 +1,20 @@
 n = int(input())
 sequence = list(map(int, input().split()))
 
-# Please write your code here.
-seq=sequence.copy()
-seq.sort()
-new=[]
+seq = sorted(sequence)
+new = []
+
+
+cnt = dict()
+
 for i in range(n):
-    if seq.index(sequence[i])+1 in new:
-        new.append(seq.index(sequence[i])+2)
+    val = sequence[i]
+    base_index = seq.index(val) + 1  
+    if val in cnt:
+        cnt[val] += 1
     else:
-        new.append(seq.index(sequence[i])+1)
-for n in new:
-    print(n, end=" ")
+        cnt[val] = 0  
+
+    new.append(base_index + cnt[val])
+
+print(*new)
