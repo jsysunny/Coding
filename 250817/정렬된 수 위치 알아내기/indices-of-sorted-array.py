@@ -6,7 +6,7 @@ seq=sequence.copy()
 seq.sort()
 new=[]
 for i in range(n):
-    if sequence[i] in new:
+    if seq.index(sequence[i])+1 in new:
         new.append(seq.index(sequence[i])+2)
     else:
         new.append(seq.index(sequence[i])+1)
