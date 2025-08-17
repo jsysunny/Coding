@@ -1,6 +1,7 @@
 # 파이썬, c, c++ 정리
 https://www.notion.so/24a2f0b4683880ce9f31de0ee0e30c7e
 
+https://github.com/orgs/MostStupidGenius/repositories
 &nbsp;
 
 # List, Dict  변경 가능(mutable) / Tuple, String 변경 불가능(immutable)
