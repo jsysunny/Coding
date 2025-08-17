@@ -18,8 +18,13 @@ for i in range(len(codenames)):
     name.append(Name(codenames[i], scores[i]))
 
 mina=100
+
 for i in range(len(name)):
     if name[i].score < mina:
-        mina= name[i].score
-    else:
+        mina = name[i].score
+
+for i in range(len(name)):
+    if name[i].score==mina:
         print(name[i].codename, name[i].score)
+
+    
