@@ -1,25 +1,27 @@
 N, K, P, T = map(int, input().split())
 handshakes = [tuple(map(int, input().split())) for _ in range(T)]
 
-# Please write your code here.
-handshakes1 = sorted(handshakes, key=lambda h: h[0])
-#print(handshakes1)
-# 원본 자체를 바꾸고 싶을때 handshakes.sort(key=lambda h: h[0])
-cnt=0
-posa=[0]*N
+# 시간 순 정렬
+handshakes.sort()
 
-for h in handshakes1:
-    #print(h[0],h[1],h[2])
-    #print(P)
-    if h[1] == P or h[2]==P:
-        cnt+=1 
-        if cnt<=K:
-            posa[h[1]-1]=1
-            posa[h[2]-1]=1 
-        else:
-            break
+# 감염 여부
+infected = [0] * (N + 1)
+infected[P] = 1
 
-for i in range(N):
-    print(posa[i],end="")
+# 감염자가 다른 사람을 감염시킬 수 있는 횟수
+can_infect = [0] * (N + 1)
+can_infect[P] = K
 
-    
+for t, x, y in handshakes:
+    if infected[x] and can_infect[x] > 0 and not infected[y]:
+        infected[y] = 1
+        can_infect[x] -= 1
+        can_infect[y] = K
+    elif infected[y] and can_infect[y] > 0 and not infected[x]:
+        infected[x] = 1
+        can_infect[y] -= 1
+        can_infect[x] = K
+
+# 출력
+for i in range(1, N + 1):
+    print(infected[i], end="")
