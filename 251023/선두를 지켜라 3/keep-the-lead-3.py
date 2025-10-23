@@ -43,13 +43,13 @@ cnt=1
 for i in range(2,timea):
     if first==1 and posa[i]>= posb[i]:
         cnt+=1
-        first==2 if posa[i]>posb[i] else 0
+        first=2 if posa[i]>posb[i] else 0
     elif first==2 and posa[i]<= posb[i]:
         cnt+=1
-        first==1 if posa[i]<posb[i] else 0
+        first=1 if posa[i]<posb[i] else 0
     elif first==0 and posa[i]!=posb[i]:
         cnt+=1
-        first==1 if posa[i]<posb[i] else 2
+        first=1 if posa[i]<posb[i] else 2
 
 print(cnt)
 
