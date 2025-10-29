@@ -4,8 +4,8 @@ grid = [list(input().split()) for _ in range(R)]
 count=0
 # Please write your code here.
 #print(grid[0][0])
-for i1 in range(R):
-    for j1 in range(C):
+for i1 in range(1,R):
+    for j1 in range(1,C):
         # 두 번째 점프: (i2, j2) > (i1, j1)
         for i2 in range(i1 + 1, R):
             for j2 in range(j1 + 1, C):
