@@ -7,8 +7,8 @@ for _ in range(n):
     c.append(char)
 
 #print(max(x))
-posa=[0]*(max(x)+1)
-posb=[0]*(max(x)+1)
+posa=[0]*(10001)
+posb=[0]*(10001)
 # Please write your code here.
 
 for i in range(len(x)):
@@ -17,7 +17,7 @@ for i in range(len(x)):
 
 
 maxa=0
-for i in range(1,max(x)-k+1):
+for i in range(1,10000-k+1):
     suma=0
     for j in range(i,i+k+1):
         if posa[j]==1:
