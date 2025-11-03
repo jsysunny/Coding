@@ -9,12 +9,14 @@ def parallelx(i,j):
     x2, y2= points[j]
     if y1==y2:
         return abs(x1-x2)
+    return None
 
 def parallely(i,j):
     x1, y1= points[i]
     x2, y2= points[j]
     if x1==x2:
         return abs(y1-y2)
+    return None
 maxp=0
 maxq=0
 for i in range(n):
