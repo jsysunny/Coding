@@ -27,7 +27,7 @@ for i in range(n):
         #print(parallely(i, j))
         if parallelx(i,j) is not None:
             maxa=max(maxa, parallelx(i,j))
-        elif parallely(i,j) is not None:
+        if parallely(i,j) is not None:
             maxb=max(maxb,parallely(i,j))
     maxp= max(maxp,maxa)
     maxq= max(maxq, maxb)
