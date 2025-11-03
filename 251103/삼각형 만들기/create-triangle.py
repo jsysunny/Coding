@@ -21,9 +21,11 @@ for i in range(n):
     maxa=0
     maxb=0
     for j in range(i+1,n):
-        if parallelx(i,j):
+        #print(parallelx(i, j))
+        #print(parallely(i, j))
+        if parallelx(i,j) is not None:
             maxa=max(maxa, parallelx(i,j))
-        elif parallely(i,j):
+        elif parallely(i,j) is not None:
             maxb=max(maxb,parallely(i,j))
     maxp= max(maxp,maxa)
     maxq= max(maxq, maxb)
