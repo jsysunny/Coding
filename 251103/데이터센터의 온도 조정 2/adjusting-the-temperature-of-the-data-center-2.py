@@ -7,7 +7,7 @@ ranges = [tuple(map(int, input().split())) for _ in range(N)]
 def a(num,Ta,Tb,C,H,G):
     if num <Ta :
         return C
-    elif num < Tb:
+    elif num <= Tb:
         return G
     else:
         return H
