@@ -13,7 +13,7 @@ def a(num,Ta,Tb,C,H,G):
         return H
 
 maxa=0
-for num in range(0,1000):
+for num in range(0,1001):
     suma=0
     for i in range(N):
         Ta,Tb=ranges[i]
